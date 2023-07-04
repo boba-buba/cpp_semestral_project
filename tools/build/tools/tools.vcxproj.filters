@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\DataRetrieval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\ECalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\GumboParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\main_tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\DataRetrieval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\ECalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\GumboParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ncoro\source\repos\cmake_semestralcpp\tools\tools\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BA494D9E-0404-35DB-AC89-037012317ADC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F36FDF11-5DF8-3417-8369-713A8E223BD4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+C:/Users/ncoro/source/repos/cmake_semestralcpp/tools/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/ncoro/source/repos/cmake_semestralcpp/tools/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ncoro/source/repos/cmake_semestralcpp/tools/out/build/x64-debug/tools/CMakeFiles/tools.dir
+C:/Users/ncoro/source/repos/cmake_semestralcpp/tools/out/build/x64-debug/tools/CMakeFiles/edit_cache.dir
+C:/Users/ncoro/source/repos/cmake_semestralcpp/tools/out/build/x64-debug/tools/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+C:/Users/ncoro/source/repos/cmake_semestralcpp/tools/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ncoro/source/repos/cmake_semestralcpp/tools/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ncoro/source/repos/cmake_semestralcpp/tools/build/tools/CMakeFiles/tools.dir
