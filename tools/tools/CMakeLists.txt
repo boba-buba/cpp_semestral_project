@@ -14,30 +14,40 @@ find_package(gumbo QUIET)
 # Check if the package was found
 if(NOT curl_FOUND)
     message(STATUS "curl package not found. Installing with Vcpkg...")
-    execute_process(
-        COMMAND "${VCPKG_ROOT}/vcpkg" install curl:x64-windows
-        RESULT_VARIABLE VCPKG_RESULT
-    )
-    #nejspis je potreba zmeit vcpkg na .\...\vcpkg.exe pro windows urcite, mnevim jestli to budu delat pro linux
+    if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+        execute_process(
+            COMMAND "${VCPKG_ROOT}/vcpkg" install curl:x64-windows
+            RESULT_VARIABLE VCPKG_RESULT
+        )        
+    endif()
+    if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+        execute_process(
+            COMMAND "${VCPKG_ROOT}/vcpkg" install curl:x64-linux
+            RESULT_VARIABLE VCPKG_RESULT
+        )        
+    endif()
     # Check the installation result
     if(NOT ${VCPKG_RESULT} EQUAL 0)
         message(FATAL_ERROR "Failed to install curl package with Vcpkg. " ${VCPKG_ROOT})
     endif()
-
-    if(${VCPKG_RESULT} EQUAL 0)
-        message("OK with curl " ${VCPKG_ROOT})
-    endif()
-
     # Find the package again after installation
     find_package(CURL REQUIRED)
 endif()
 
 if(NOT gumbo_FOUND)
     message(STATUS "Gumbo package not found. Installing with Vcpkg...")
-    execute_process(
-        COMMAND "${VCPKG_ROOT}/vcpkg" install gumbo:x64-windows
-        RESULT_VARIABLE VCPKG_RESULT
-    )
+    if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+        execute_process(
+            COMMAND "${VCPKG_ROOT}/vcpkg" install gumbo:x64-windows
+            RESULT_VARIABLE VCPKG_RESULT
+        )        
+    endif()
+    if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+        execute_process(
+            COMMAND "${VCPKG_ROOT}/vcpkg" install gumbo
+            RESULT_VARIABLE VCPKG_RESULT
+        )        
+    endif()
 
     # Check the installation result
     if(NOT ${VCPKG_RESULT} EQUAL 0)
@@ -47,7 +57,6 @@ if(NOT gumbo_FOUND)
     # Find the package again after installation
     find_package(unofficial-gumbo REQUIRED)
 endif()
-
 
 
 
