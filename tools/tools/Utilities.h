@@ -21,7 +21,7 @@ namespace Time {
 		std::string year = d.substr(8);
 		return months.at(month) + "/" + day + "/" + year;
 	}
-	
+	/*
 	using Days = std::chrono::year_month_day;
 
 	Days ParseDate(std::string& date)
@@ -38,7 +38,7 @@ namespace Time {
 		auto diff = std::chrono::sys_days(d2) - std::chrono::sys_days(d1);
 		int d = std::abs(diff.count());
 		return d;
-	}
+	}*/
 };
 
 #endif // !Utilities_h

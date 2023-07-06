@@ -2,9 +2,10 @@
 #define GumboParser_h
 #include "gumbo.h"
 #include <iostream>
-#include<string>
+#include <string>
 #include <vector>
 #include <map>
+#include <cstring>
 
 namespace Parser
 {
