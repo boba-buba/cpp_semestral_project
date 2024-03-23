@@ -4,7 +4,7 @@
 #
 
 # Set the Vcpkg directory
-set(VCPKG_ROOT "/home/koropn/vcpkg")
+set(VCPKG_ROOT "/vcpkg")
 
 
 # Find and configure the desired package(s)
@@ -18,13 +18,13 @@ if(NOT curl_FOUND)
         execute_process(
             COMMAND "${VCPKG_ROOT}/vcpkg" install curl:x64-windows
             RESULT_VARIABLE VCPKG_RESULT
-        )        
+        )
     endif()
     if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
         execute_process(
             COMMAND "${VCPKG_ROOT}/vcpkg" install curl:x64-linux
             RESULT_VARIABLE VCPKG_RESULT
-        )        
+        )
     endif()
     # Check the installation result
     if(NOT ${VCPKG_RESULT} EQUAL 0)
@@ -40,13 +40,13 @@ if(NOT gumbo_FOUND)
         execute_process(
             COMMAND "${VCPKG_ROOT}/vcpkg" install gumbo:x64-windows
             RESULT_VARIABLE VCPKG_RESULT
-        )        
+        )
     endif()
     if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
         execute_process(
             COMMAND "${VCPKG_ROOT}/vcpkg" install gumbo
             RESULT_VARIABLE VCPKG_RESULT
-        )        
+        )
     endif()
 
     # Check the installation result
