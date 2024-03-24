@@ -70,7 +70,7 @@ target_link_libraries(tools PRIVATE unofficial::gumbo::gumbo)
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET tools PROPERTY CXX_STANDARD 26)
+  set_property(TARGET tools PROPERTY CXX_STANDARD 20)
 endif()
 
 # TODO: Add tests and install targets if needed.

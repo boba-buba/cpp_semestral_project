@@ -20,18 +20,15 @@ RUN git clone https://github.com/microsoft/vcpkg.git
 
 RUN vcpkg/bootstrap-vcpkg.sh
 
-# Install required libraries using vcpkg
-RUN /vcpkg/vcpkg install curl gumbo
-
 # Set up environment variables for vcpkg
 ENV VCPKG_ROOT=/vcpkg
 
-# Set the working directory
-WORKDIR /tools/tools
-
-
 # Copy your project files into the container
-COPY . .
+COPY tools .
+#COPY CMakeLists.txt .
+
+# Set the working directory
+WORKDIR /tools
 
 # Build your project
 RUN mkdir build && cd build
@@ -42,4 +39,4 @@ RUN cmake --build .
 
 
 # Set the command to execute when the container starts
-CMD ["./build/tools/tools"]
+CMD ["./tools/tools"]
